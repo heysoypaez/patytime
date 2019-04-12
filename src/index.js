@@ -4,13 +4,13 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import Header  from "./page/components/header/components/header.js"
+import HeaderContainer  from "./page/components/header/containers/header-container.js"
 
 
 ReactDOM.render(
 
 	<App> 
-		<Header />
+		<HeaderContainer />
 	</App>,
 
  document.getElementById('root') 
