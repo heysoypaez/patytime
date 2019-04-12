@@ -1,0 +1,42 @@
+@import "../../../styles/lib/_variables.scss";
+
+.Modal {
+
+	position: fixed;
+
+	top: 20vh;
+	bottom: 20vh;
+	left:20vw;
+	right: 20vw;
+
+	background-color: white;
+
+	display: grid;
+
+	text-align: center;
+	justify-content: center;
+	vertical-align: top;
+
+	
+	padding: 10px 30px;
+	box-shadow: $box-shadow-base;
+	border-radius: 0px 0px 10px 10px; 
+	background-image: $color-brand-principal;
+	color: white;
+
+
+}
+
+.Modal-close {
+
+	color: white;
+	background-color: transparent;
+
+	font-weight: bold;
+
+	border-radius: 100px;
+	border-radius: 5px;
+	padding: 5px;
+	align-self: end;
+
+}
