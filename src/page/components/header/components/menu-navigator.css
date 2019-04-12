@@ -1,0 +1,16 @@
+a {
+	font-weight: bold;
+	text-decoration: none;
+
+}
+
+.MenuNavigator {
+	display: grid;
+	align-items: center;
+}
+
+.MenuNavigator-item {
+
+	color: white;
+
+}
