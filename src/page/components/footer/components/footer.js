@@ -6,7 +6,6 @@ function Footer(props) {
 	return(
 
 		<footer className="Footer">
-
 			Hello
 			{props.children}
 		</footer>

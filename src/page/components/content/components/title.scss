@@ -1,0 +1,18 @@
+@import "../../../../styles/lib/_variables.scss";
+
+
+.Title {
+
+	box-shadow: $box-shadow-base;
+	border-radius: 10px; 
+	background-image: $color-brand-principal;
+	font-family: 'Dancing Script', cursive;
+	margin: 0 5vw;
+	color: white;
+	font-weight: 300;
+	font-size: 14px;
+
+	padding: 10px 50px
+
+
+}

@@ -1,0 +1,36 @@
+@import "../../../../styles/lib/_variables.scss";
+
+.Content {
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+
+	margin: 50px;
+	justify-items: center;
+	align-items: center;
+}
+
+.Content-block {
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 15px;
+	justify-items: center;
+	align-items: center;
+}
+
+
+.Content img {
+
+	width: 300px;
+	height: auto;
+
+}
+
+h1 {
+		font-family: 'Dancing Script', cursive;
+}
+
+article {
+	text-align: center;
+}
