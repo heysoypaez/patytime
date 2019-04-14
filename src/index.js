@@ -4,13 +4,17 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import HeaderContainer  from "./page/components/header/containers/header-container.js"
+import Header  from "./page/components/header/containers/header-container.js"
+import Footer  from "./page/components/footer/containers/footer-container.js"
+
 
 
 ReactDOM.render(
 
 	<App> 
-		<HeaderContainer />
+		<Header />
+		<h1>Hola</h1>
+		<Footer />
 	</App>,
 
  document.getElementById('root') 

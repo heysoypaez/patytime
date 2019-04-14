@@ -1,5 +1,5 @@
 import React from "react";
-import "./menu-navigator.css"
+import "./menu-navigator.scss"
 
 function MenuNavigator(props) {
 
