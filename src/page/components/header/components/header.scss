@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import "../../../../styles/lib/_variables.scss";
+
+
+.Header  {
+
+	display: grid;
+
+	grid-template-columns: repeat(3,1fr);
+
+	grid-column-gap: $grid-column-gap-base; 
+
+	padding: 1px 30px;
+	box-shadow: $box-shadow-base;
+	border-radius: 0px 0px 10px 10px; 
+	background-image: $color-brand-principal;
+
+
+	max-height: 15vh;
+
+	overflow: hidden;
+
+	align-items: center;
+}
+
+.Header-col-1 {
+
+	grid-column: 1;
+	justify-self: start;
+
+}
+
+.Header-col-2 {
+
+	grid-column: 2;
+	justify-self: center;
+	text-align: center;
+
+	color: white;
+	font-family: 'Dancing Script', cursive;
+	font-size: 30px;
+	margin: 0;
+
+}
+
+@media screen and (max-width: 600px) {
+
+	.Header-col-2 {
+		font-size: 20px;
+	}
+}
+
+.Header-col-3 {
+	grid-column: 3;
+	justify-self: end;
+}
+

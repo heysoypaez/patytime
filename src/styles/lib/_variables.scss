@@ -1,0 +1,64 @@
+ //$COLORS
+//=======================*/
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+//Branding resources
+//======================*/
+
+//Branding color
+
+	$color-brand-principal: linear-gradient(to bottom right, purple, red); 
+	$color-brand-secondary: #eee;
+
+
+	$font-brand-principal: Dancing Script;
+	$font-brand-secondary: aa;
+
+// Degradez black - white*/
+
+	$color-black: #111;
+	$color-dark-grey: #444;
+	$color-grey: #999;
+	$color-lightgrey: #eee;
+	$color-white: #fee;
+
+//Textures
+
+	$color-alert: rgb(252,228,287);
+	$color-error: red;
+	$color-info: yellow;
+	$color-sucess: green;
+
+
+// tipography
+//=============== =*/
+
+	$baseFont:  "Quicksand", sans-serif;
+	$base-font-size: 18px;
+	$font-size-base: $base-font-size ;
+	$button-font-size: $base-font-size * 1.5;
+
+	$button-color: $color-white;
+	$background-button-color: $color-brand-principal;
+
+
+//CONSTANTES*/
+
+	//Border*/
+
+		$border-radius-base: 10px;
+		$padding-base: 24px;
+		$page-max-width: 824px;
+
+
+	// Shadows
+
+		$box-shadow-base: 0px 3px 7px 10px gray ;
+
+
+// GRID
+
+	//Gaps
+
+	$grid-column-gap-base: 30px; 
