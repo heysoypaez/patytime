@@ -1,14 +1,13 @@
 {
-  "main.css": "/patytime/static/css/main.73989ef0.chunk.css",
-  "main.js": "/patytime/static/js/main.5dc9f4ad.chunk.js",
-  "main.js.map": "/patytime/static/js/main.5dc9f4ad.chunk.js.map",
+  "main.css": "/patytime/static/css/main.c42d2eb9.chunk.css",
+  "main.js": "/patytime/static/js/main.18bf3b33.chunk.js",
+  "main.js.map": "/patytime/static/js/main.18bf3b33.chunk.js.map",
   "runtime~main.js": "/patytime/static/js/runtime~main.5c79a741.js",
   "runtime~main.js.map": "/patytime/static/js/runtime~main.5c79a741.js.map",
-  "static/js/2.c2f79bd0.chunk.js": "/patytime/static/js/2.c2f79bd0.chunk.js",
-  "static/js/2.c2f79bd0.chunk.js.map": "/patytime/static/js/2.c2f79bd0.chunk.js.map",
+  "static/js/2.74940738.chunk.js": "/patytime/static/js/2.74940738.chunk.js",
+  "static/js/2.74940738.chunk.js.map": "/patytime/static/js/2.74940738.chunk.js.map",
   "index.html": "/patytime/index.html",
-  "precache-manifest.d6bf9ea7443ef220597faa3957284f84.js": "/patytime/precache-manifest.d6bf9ea7443ef220597faa3957284f84.js",
+  "precache-manifest.7462b6d4cfb19681fe8cbc4b657a8b3d.js": "/patytime/precache-manifest.7462b6d4cfb19681fe8cbc4b657a8b3d.js",
   "service-worker.js": "/patytime/service-worker.js",
-  "static/css/main.73989ef0.chunk.css.map": "/patytime/static/css/main.73989ef0.chunk.css.map",
-  "static/media/imagen-outfit-daniel-paez-tomar-nader.jpeg": "/patytime/static/media/imagen-outfit-daniel-paez-tomar-nader.be66f79b.jpeg"
+  "static/css/main.c42d2eb9.chunk.css.map": "/patytime/static/css/main.c42d2eb9.chunk.css.map"
 }
