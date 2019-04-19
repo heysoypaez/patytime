@@ -8,10 +8,10 @@ import Footer  from "./footer/containers/footer-container.js"
 function PageLayout(props) {
 
 
-	return(
+	return(	
 		<div>
 			<Header />
-			<Content />
+			<Content data={props.data} />
 			<Footer />
 		</div>
 	)

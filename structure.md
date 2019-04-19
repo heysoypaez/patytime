@@ -1,3 +1,22 @@
+/*
+
+Now
+
+I need to call image in an scalable way
+
+Use an API.json
+
+=> Create the API
+=> Change the name of the images
+
+=> Define the sections of the home
+
+
+
+
+*/
+
+
 RPM
 
 

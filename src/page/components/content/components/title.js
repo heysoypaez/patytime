@@ -6,7 +6,7 @@ function Title(props) {
 	
 	return(		
 		<header className="Title">
-			<h1>Aquí es donde te digo vainas serias</h1>
+			<h1>{props.text}</h1>
 		</header>
 	)
 }

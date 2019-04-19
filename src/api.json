@@ -1,0 +1,33 @@
+{
+  "artworks": {
+
+    "categories": {
+      
+      "drawings": [
+
+        {
+          "id": 1,
+          "title": "An exciting tiger",
+          "description": "Hacer esto cuesta mi hermano",
+          "src": "./img/artwork/tiger-artwork.png"
+        },
+
+        {
+          "id": 2,
+          "title": "Hands Touching",
+          "description": "Hacer esto cuesta mi hermano",
+          "src": "./img/artwork/hands-touching-artwork.jpg"
+        },
+
+        {
+          "id": 3,
+          "title": "Chama mete la lengua",
+          "description": "Hacer esto cuesta mi hermano",
+          "src": "./img/artwork/carmen-selfie-tongue-out-artwork.png"
+        }
+
+
+      ]    
+    }
+  }
+}
