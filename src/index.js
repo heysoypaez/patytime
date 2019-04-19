@@ -4,18 +4,13 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import PageLayout  from "./page/components/page-layout.js"
 
-
+import data from "./api.json";
 
 
 ReactDOM.render(
 
-	<App> 
-		<PageLayout/>
-	</App>,
-
- document.getElementById('root') 
+	<App data={data} />, document.getElementById('root') 
  );
 
 // If you want your app to work offline and load faster, you can change
