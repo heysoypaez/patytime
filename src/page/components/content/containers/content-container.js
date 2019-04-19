@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import Content from "../components/content.js";
-import Title from "../components/title.js"
 
 class ContentContainer extends Component {
 
@@ -9,17 +8,10 @@ class ContentContainer extends Component {
 		return(
 
 			<div> 
-
-				
-				<Content/>
-				<Title/>
-				<Content/>
+				<Content drawings={this.props.data.artworks.categories.drawings}/>
 			</div>
-
 		)
-
 	} 
-
 }
 
 export default ContentContainer;
