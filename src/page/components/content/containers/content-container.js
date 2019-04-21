@@ -9,6 +9,7 @@ class ContentContainer extends Component {
 
 			<div> 
 				<Content drawings={this.props.data.artworks.categories.drawings}/>
+				{this.props.children}
 			</div>
 		)
 	} 

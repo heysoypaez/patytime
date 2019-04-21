@@ -67,6 +67,8 @@ function Content(props) {
 				text="Vamos a hablar"
 			/>
 
+			{props.children}
+
 			
 		</section>
 	)

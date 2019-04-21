@@ -11,6 +11,10 @@
 	align-items: center;
 }
 
+.Content article h1 {
+	
+}
+
 .Content-block {
 
 	display: grid;
@@ -25,21 +29,23 @@
 
 	width: 300px;
 	height: auto;
+	transform: rotate(5deg);
+	z-index: 1;
 	
 }
 
 
 .Content img:hover {
-	animation: example 5s linear 2s infinite alternate;
+	animation: artwork-motion 1s linear normal forwards;
 }
 
-@keyframes example {
+@keyframes artwork-motion {
 	from {
-		transform: rotate(0deg);
+		transform: rotate(5deg);
 	}
 
 	to {
-		transform: rotate(90deg);
+		transform: rotate(0deg);
 	}
 }
 

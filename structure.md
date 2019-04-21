@@ -1,4 +1,3 @@
-/*
 
 Now
 
@@ -13,8 +12,15 @@ Use an API.json
 
 
 
+///
 
-*/
+Features Ideas
+--------------
+
+- 1 Dollar Per Draw
+- Make Controls to download a photo
+- CMS for Paty, for update, change or delete data
+
 
 
 RPM

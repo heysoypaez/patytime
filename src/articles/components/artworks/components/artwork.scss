@@ -1,0 +1,37 @@
+@import "../../../../styles/lib/_variables.scss";
+
+.Artwork h2 {
+
+	font-family: $font-brand-principal;
+}
+
+.Artwork img {
+
+	width: 300px;
+	height: auto;
+	z-index: 1;
+	
+}
+
+.Artwork p {
+
+	padding-bottom: 10px;
+}
+
+
+.Artwork-button {
+
+	box-shadow: $box-shadow-base;
+	border-radius: 10px; 
+	background-image: $color-brand-principal;
+	font-family: $font-brand-secondary;
+	margin: 10px 5vw;
+	color: white;
+	font-weight: 300;
+	font-size: 14px;
+
+	padding: 10px 50px;
+	cursor: pointer;
+
+
+}
