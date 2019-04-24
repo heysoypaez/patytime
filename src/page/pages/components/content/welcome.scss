@@ -1,0 +1,21 @@
+.Welcome img {
+
+	width: 100vw;
+	height: auto;
+	cursor: pointer;
+}
+
+.Welcome h1 {
+	font-size: 60px;
+	padding: 0px 2%;
+	font-family: "Source Sans Pro", sans-serif;
+	padding-right: 70%;
+}
+
+@media screen and (max-width: 900px) {
+
+	.Welcome h1 {
+		padding-right: 30%;
+	}
+
+}
