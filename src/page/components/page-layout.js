@@ -16,7 +16,11 @@ function PageLayout(props) {
 
 			<Content data={props.data}>
 
-				<Artworks data={props.data} />
+				<Artworks 
+					data={props.data}
+					limit={3}
+				/>
+
 			</Content>
 
 			<Footer />
