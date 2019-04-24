@@ -2,11 +2,24 @@
 .Artworks {
 
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) );
+
+
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) ) , 1fr;
+
+	grid-template-areas: "head head head"
+						 "item-a item-b item-c";
 
 	margin: 50px;
 	column-gap: 25px;
 	row-gap: 25px;
 	justify-items: center;
 	align-items: center;
+
+}
+
+
+
+.Artworks .Title {
+	grid-area: head;
+	width: 70vw;
 }

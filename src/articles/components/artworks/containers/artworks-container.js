@@ -5,21 +5,23 @@ import Artworks from "../components/artworks.js"
 
 class ArtworksContainer extends Component {
 
+	constructor(props) {
+		super(props);
+
+	}
+
 
 	render() {
 
-		this.drawings = this.props.data.artworks.categories.drawings
 
-		/*We will return an Artwork Component for
-		each Artwork in the JSON API*/
+		this.drawings = this.props.data.artworks.categories.drawings;
 
-		return ( 
+		const { limit } = this.props
 
-			<Artworks>
 
-			{
+		if(!limit) {
 
-			 this.drawings.map(
+			this.$drawings = this.drawings.map(
 			
 				elem => (
 					
@@ -30,8 +32,38 @@ class ArtworksContainer extends Component {
 						key={elem.id}
 					 />
 				)
-			)}
+			)
+		}
 
+		else {
+
+			this.drawingsLimitted = this.drawings.filter(
+
+				(item, index ) => index < limit
+			)
+
+			this.$drawings = this.drawingsLimitted.map(
+			
+				elem => (
+					
+					<Artwork
+						title= {elem.title}
+						src= {elem.src}
+						description= {elem.description}
+						key={elem.id}
+					 />
+				)
+			)
+		}
+
+
+		/*We will return an Artwork Component for
+		each Artwork in the JSON API*/
+
+		return ( 
+
+			<Artworks>
+				{this.$drawings}
 			</Artworks>
 		)
 	}
