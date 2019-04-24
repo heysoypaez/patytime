@@ -98,8 +98,6 @@
           "src": "./img/artwork/dresses-black-white-artwork.jpg"
         },
 
-        /*UnUpdated*/
-
         {
           "id": 14,
           "title": "Vestidos, faldas en blanco y negro",
@@ -129,13 +127,41 @@
           "src": "./img/artwork/dresses-black-white-artwork.jpg"
         },
 
-        
+        {
+          "id": 18,
+          "title": "Vestidos, faldas en blanco y negro",
+          "description": "Practicando",
+          "src": "./img/artwork/dresses-black-white-artwork.jpg"
+        },
 
+        {
+          "id": 19,
+          "title": "Vestidos, faldas en blanco y negro",
+          "description": "Practicando",
+          "src": "./img/artwork/dresses-black-white-artwork.jpg"
+        },
 
-
-
+        {
+          "id": 20,
+          "title": "Vestidos, faldas en blanco y negro",
+          "description": "Practicando",
+          "src": "./img/artwork/dresses-black-white-artwork.jpg"
+        }
 
       ]    
     }
-  }
+  },
+
+  "users": [
+  
+       {
+        "id": 0,
+        "nickname": "Paty",
+        "name": "Patricia",
+        "last-name": "Romero",
+        "full-name": "Patricia Romero",
+        "photo": "./img/paty/paty-selfie-headphones.jpg"
+        }
+
+    ]
 }
