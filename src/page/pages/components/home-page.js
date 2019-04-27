@@ -7,6 +7,7 @@ import "./content/content.scss" //OJO
 import Welcome from "./content/welcome.js"
 import Title from "./content/title.js"
 import AboutMe from "./content/about-me.js"
+import Contact from "./content/contact.js"
 
 import Artworks from "../../../articles/components/artworks/containers/artworks-container.js";
 
@@ -32,10 +33,12 @@ function HomePage(props) {
 					limit={3}
 				/>
 
-			    <Title
+			  <Title
 
 					text="Vamos a hablar"
 				/>
+
+				<Contact />
 
 
 		</section>

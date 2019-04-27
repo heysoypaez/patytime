@@ -9,7 +9,7 @@ What specific result i will get today in the App ?
 
 *Thoughts chaotics*
 
-
+	
 I want to finish the home page
 
 What needs to happens in order to consider the home page finished ?
