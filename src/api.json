@@ -160,8 +160,18 @@
         "name": "Patricia",
         "last-name": "Romero",
         "full-name": "Patricia Romero",
-        "photo": "./img/paty/paty-selfie-headphones.jpg"
+        "photo": "./img/paty/paty-selfie-headphones.jpg",
+        "email": "patriciaromero2000@gmail.com",
+        "phone": "17866249408"
         }
 
-    ]
+    ],
+
+  "external": {
+    "images": {
+      "whatsapp": "http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c543.png",
+      "gmail": "./google-product-logos/logo_gmail_64px.png"
+
+    }
+  }
 }

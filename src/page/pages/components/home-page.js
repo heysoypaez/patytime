@@ -14,6 +14,10 @@ import Artworks from "../../../articles/components/artworks/containers/artworks-
 
 function HomePage(props) {
 
+	const {data} = props;
+
+	const Paty = data.users[0];
+
 	return(
 
 		<Page > 
@@ -38,7 +42,12 @@ function HomePage(props) {
 					text="Vamos a hablar"
 				/>
 
-				<Contact />
+				<Contact
+					whatsappImage={data.external.images.whatsapp}
+					gmailImage={data.external.images.gmail}
+					email={Paty.email}
+					phone={Paty.phone}
+				 />
 
 
 		</section>
