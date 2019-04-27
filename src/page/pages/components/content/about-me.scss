@@ -1,0 +1,38 @@
+
+.About-Paty {
+
+	display: grid;
+
+
+	grid-template-areas: "head head"
+						 "item-a item-b";
+
+	grid-template-columns: 0.5fr , 0.5fr;
+	grid-row-gap: 30px;
+	align-items: center;
+	padding: 50px 2vw;
+}
+
+.About-Paty .Title {
+	grid-area: head;
+}
+
+.About-Paty p {
+
+	font-size: 60px;
+	padding: 0px 2%;
+	font-family: "Source Sans Pro", sans-serif;
+	margin-left: 5%;
+	
+}
+
+
+ .About-Paty img {
+
+	width: 300px;
+	height: auto;
+	border-radius: 90px;
+	z-index: 1;
+	
+}
+

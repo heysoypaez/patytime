@@ -24,10 +24,154 @@
           "title": "Chama mete la lengua",
           "description": "Hacer esto cuesta mi hermano",
           "src": "./img/artwork/carmen-selfie-tongue-out-artwork.png"
+        },
+
+        {
+          "id": 4,
+          "title": "Mirada al horizonte",
+          "description": "Me encanta",
+          "src": "./img/artwork/girl-digital-selfie-artwork.png"
+        },
+
+        {
+          "id": 5,
+          "title": "El hombre mono mira los patos",
+          "description": "Prohibido reirse",
+          "src": "./img/artwork/man-monkey-and-ducks-artwork.jpg"
+        },
+
+        {
+          "id": 6,
+          "title": "Mama en Blanco y Negro",
+          "description": "Chico, ¿Habeis pensado alguna vez lo que una mamá ama a sus hijos?",
+          "src": "./img/artwork/mom-dark-white-artwork.jpg"
+        },
+
+
+        {
+          "id": 7,
+          "title":"Hombre de lentes en acuarela",
+          "description": "Lo que tiene en la mano es un lapiz",
+          "src": "./img/artwork/man-acuarela-four-pictures.jpg"
+        },
+
+
+        {
+          "id": 8,
+          "title": "Mis primeras modelos para mis vestidos",
+          "description": "Y ahora estoy estudiando fashion design !",
+          "src": "./img/artwork/girls-fashion-design-artwork.jpg"
+        },
+
+        {
+          "id": 9,
+          "title": "Modelo Fashion",
+          "description": "Alta, botas, patas anchas, ¿No te encanta?",
+          "src": "./img/artwork/model-fashion-wear-artwork.jpg"
+        },
+
+        {
+          "id": 10,
+          "title": "Edgar Ramirez, Súper Actor Venezolanos",
+          "description": "Gracias por tus peliculas tan locotas :3",
+          "src": "./img/artwork/edgar-ramirez-selfie-artwork.jpg"
+        },
+
+        {
+          "id": 11,
+          "title": "Esa soy Yooo, Paty",
+          "description": "Mira mi pelo largo",
+          "src": "./img/artwork/paty-selfie-smiling-artwork.jpg"
+        },
+
+        {
+          "id": 12,
+          "title": "Corazon de Patacon",
+          "description": "Mijo, un patacon es una fritura de platano pero sabrosa en mi país, ¿Quereis uno?",
+          "src": "./img/artwork/corazon-de-patacon-artwork.jpg"
+        },
+
+        {
+          "id": 13,
+          "title": "Vestidos, faldas en blanco y negro",
+          "description": "Practicando",
+          "src": "./img/artwork/dresses-black-white-artwork.jpg"
+        },
+
+        {
+          "id": 14,
+          "title": "Vestidos, faldas en blanco y negro",
+          "description": "Practicando",
+          "src": "./img/artwork/dresses-black-white-artwork.jpg"
+        },
+
+        {
+          "id": 15,
+          "title": "Vestidos, faldas en blanco y negro",
+          "description": "Practicando",
+          "src": "./img/artwork/dresses-black-white-artwork.jpg"
+        },
+
+        {
+          "id": 16,
+          "title": "Vestidos, faldas en blanco y negro",
+          "description": "Practicando",
+          "src": "./img/artwork/dresses-black-white-artwork.jpg"
+        },
+
+
+        {
+          "id": 17,
+          "title": "Vestidos, faldas en blanco y negro",
+          "description": "Practicando",
+          "src": "./img/artwork/dresses-black-white-artwork.jpg"
+        },
+
+        {
+          "id": 18,
+          "title": "Vestidos, faldas en blanco y negro",
+          "description": "Practicando",
+          "src": "./img/artwork/dresses-black-white-artwork.jpg"
+        },
+
+        {
+          "id": 19,
+          "title": "Vestidos, faldas en blanco y negro",
+          "description": "Practicando",
+          "src": "./img/artwork/dresses-black-white-artwork.jpg"
+        },
+
+        {
+          "id": 20,
+          "title": "Vestidos, faldas en blanco y negro",
+          "description": "Practicando",
+          "src": "./img/artwork/dresses-black-white-artwork.jpg"
         }
 
-
       ]    
+    }
+  },
+
+  "users": [
+  
+       {
+        "id": 0,
+        "nickname": "Paty",
+        "name": "Patricia",
+        "last-name": "Romero",
+        "full-name": "Patricia Romero",
+        "photo": "./img/paty/paty-selfie-headphones.jpg",
+        "email": "patriciaromero2000@gmail.com",
+        "phone": "17866249408"
+        }
+
+    ],
+
+  "external": {
+    "images": {
+      "whatsapp": "http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c543.png",
+      "gmail": "./google-product-logos/logo_gmail_64px.png"
+
     }
   }
 }

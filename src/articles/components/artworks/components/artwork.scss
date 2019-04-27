@@ -1,0 +1,52 @@
+@import "../../../../styles/lib/_variables.scss";
+
+.Artwork h2 {
+
+	font-family: $font-brand-principal;
+}
+
+.Artwork img {
+
+	width: 300px;
+	height: auto;
+	z-index: 1;
+	transform: rotate(5deg);
+}
+
+.Artwork p {
+
+	padding-bottom: 10px;
+}
+
+
+.Artwork-button {
+
+	box-shadow: $box-shadow-base;
+	border-radius: 10px; 
+	background-image: $color-brand-principal;
+	font-family: $font-brand-secondary;
+	margin: 10px 5vw;
+	color: white;
+	font-weight: 300;
+	font-size: 14px;
+
+	padding: 10px 50px;
+	cursor: pointer;
+
+
+}
+
+
+.Artwork img:hover {
+	animation: artwork-motion 1s linear normal forwards;
+}
+
+@keyframes artwork-motion {
+	from {
+		transform: rotate(5deg);
+	}
+
+	to {
+		transform: rotate(0deg);
+	}
+}
