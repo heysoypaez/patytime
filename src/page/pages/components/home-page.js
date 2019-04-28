@@ -8,13 +8,12 @@ import Welcome from "./content/welcome.js"
 import Title from "./content/title.js"
 import AboutMe from "./content/about-me.js"
 import Contact from "./content/contact.js"
-
 import Artworks from "../../../articles/components/artworks/containers/artworks-container.js";
+
+import data from "../../../api.json";
 
 
 function HomePage(props) {
-
-	const {data} = props;
 
 	const Paty = data.users[0];
 
@@ -30,10 +29,10 @@ function HomePage(props) {
 					text="Como te puedo ayudar"
 				/>
 
-				<AboutMe data={props.data}/>
+				<AboutMe data={data}/>
 
 				<Artworks 
-					data={props.data}
+					data={data}
 					limit={3}
 				/>
 
@@ -58,3 +57,4 @@ function HomePage(props) {
 export default HomePage;
 
 
+	

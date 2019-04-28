@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import Artwork from "../components/artwork.js"
 import Artworks from "../components/artworks.js"
+import data from "../../../../api.json";
 
 
 class ArtworksContainer extends Component {
@@ -10,11 +11,15 @@ class ArtworksContainer extends Component {
 
 	}
 
+	state = {
+		data: data,
+	}
+
 
 	render() {
 
 
-		this.drawings = this.props.data.artworks.categories.drawings;
+		this.drawings = this.state.data.artworks.categories.drawings;
 
 		const { limit } = this.props
 

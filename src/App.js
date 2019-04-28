@@ -3,41 +3,44 @@ import './App.css';
 
 import Page  from "./page/containers/page-container.js";
 import HomePage from "./page/pages/components/home-page.js"
+import Artworks from "./articles/components/artworks/containers/artworks-container.js"
 
-/*
+
 //React Router
-import { BrowserRouter as Router , Route, Switch } from "react-router-dom";
-
-//Redux
-import {Provider as ReduxProvider} from "react-redux";
-import store from "./store";
-*/
+import { BrowserRouter as Router , Route, Switch, Link } from "react-router-dom";
 
 
-class App extends Component {
-  render() {
+function Home(props) {
+      
     return (
-
-		/*
-    		<ReduxProvider store={store}>
-
-    			<Router>
-
-    				<Route exact path="/patytime" component={Page} />
-
-    				<Route exact path="/patytime/aboutme" component={AboutMe} />
-    			</Router>
-
-    		</ReduxProvider>
-		*/  		
 
       <div className="App">
         
-        	<HomePage data={this.props.data} />
+          <HomePage data={props.data} />
      
       </div>
     );
-  }
+ }
+
+ const ArtworksPage = (props) => (
+          <Page>
+             <Artworks />
+          </Page>
+    )
+ 
+
+
+function App() {
+  return (
+    <Router>
+      <div>
+ 
+        <Route path="/" exact component={Home} />
+        <Route path="/artworks/" component={ArtworksPage} />
+      </div>
+    </Router>
+  );
 }
+
 
 export default App;
