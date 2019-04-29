@@ -173,5 +173,71 @@
       "gmail": "./google-product-logos/logo_gmail_64px.png"
 
     }
+  },
+
+  "services": {
+
+    "draw": {
+
+      "title": "Di más sin palabras",
+      "description":"",
+
+      "icon": "",
+      "image": "",
+
+      "selling": {
+
+        "problem": "",
+        "agitation": "",
+        "story&&solution": "",
+        "testimony&&transformation": "",
+        "offer": "",
+        "response": "",
+
+        "customer": []
+      }
+    },
+
+    "fashionDesign": {
+
+      "title": "",
+      "description":"",
+
+      "icon": "",
+      "image": "",
+
+      "selling": {
+
+        "problem": "",
+        "agitation": "",
+        "story&&solution": "",
+        "testimony&&transformation": "",
+        "offer": "",
+        "response": "",
+
+        "customer": []
+      }
+    },
+
+    "sing": {
+
+      "title": "",
+      "description":"",
+
+      "icon": "",
+      "image": "",
+
+      "selling": {
+
+        "problem": "",
+        "agitation": "",
+        "story&&solution": "",
+        "testimony&&transformation": "",
+        "offer": "",
+        "response": "",
+
+        "customer": []
+      }
+    }
   }
 }

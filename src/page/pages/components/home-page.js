@@ -4,17 +4,18 @@ import Page from "../../containers/page-container.js"
 
 import "./content/content.scss" //OJO
 
+//Components
 import Welcome from "./content/welcome.js"
 import Title from "./content/title.js"
 import AboutMe from "./content/about-me.js"
 import Contact from "./content/contact.js"
 import Artworks from "../../../articles/components/artworks/containers/artworks-container.js";
-
-import data from "../../../api.json";
+import Services from "./content/services.js"
 
 
 function HomePage(props) {
 
+	const {data} = props;
 	const Paty = data.users[0];
 
 	return(
@@ -24,10 +25,7 @@ function HomePage(props) {
 
 				<Welcome />
 
-				<Title
-
-					text="Como te puedo ayudar"
-				/>
+				<Services data={data} />
 
 				<AboutMe data={data}/>
 
@@ -36,17 +34,12 @@ function HomePage(props) {
 					limit={3}
 				/>
 
-			  <Title
-
-					text="Vamos a hablar"
-				/>
-
 				<Contact
 					whatsappImage={data.external.images.whatsapp}
 					gmailImage={data.external.images.gmail}
 					email={Paty.email}
 					phone={Paty.phone}
-				 />
+				/>
 
 
 		</section>

@@ -2,6 +2,8 @@
 import React from "react";
 import "./contact.scss";
 
+import Title from "./title.js"
+
 
 function Contact(props) {
  	// body...
@@ -9,6 +11,11 @@ function Contact(props) {
 
 
  	return(
+
+ 	   <div>
+				
+				
+ 	   	<Title text="Vamos a hablar" />
  	   
  	   <section className="Contact">
 
@@ -42,6 +49,7 @@ function Contact(props) {
 			</a>
 
  	   </section>
+ 	   </div>
  	)
 
  } 
