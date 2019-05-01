@@ -4,18 +4,18 @@ import Page from "../../containers/page-container.js"
 
 import "./content/content.scss" //OJO
 
+//Components
 import Welcome from "./content/welcome.js"
 import Title from "./content/title.js"
 import AboutMe from "./content/about-me.js"
 import Contact from "./content/contact.js"
-
 import Artworks from "../../../articles/components/artworks/containers/artworks-container.js";
+import Services from "./content/services-container.js"
 
 
 function HomePage(props) {
 
 	const {data} = props;
-
 	const Paty = data.users[0];
 
 	return(
@@ -25,21 +25,13 @@ function HomePage(props) {
 
 				<Welcome />
 
-				<Title
+				<Services data={data} />
 
-					text="Como te puedo ayudar"
-				/>
-
-				<AboutMe data={props.data}/>
+				<AboutMe data={data}/>
 
 				<Artworks 
-					data={props.data}
+					data={data}
 					limit={3}
-				/>
-
-			  <Title
-
-					text="Vamos a hablar"
 				/>
 
 				<Contact
@@ -47,7 +39,7 @@ function HomePage(props) {
 					gmailImage={data.external.images.gmail}
 					email={Paty.email}
 					phone={Paty.phone}
-				 />
+				/>
 
 
 		</section>
@@ -58,3 +50,4 @@ function HomePage(props) {
 export default HomePage;
 
 
+	

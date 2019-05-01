@@ -9,9 +9,7 @@ function AboutMe(props) {
 
 
 	const { data } = props;
-
 	const paty = data.users[0]
-
 	
 	return(
 
