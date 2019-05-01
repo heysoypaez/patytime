@@ -148,7 +148,24 @@
           "src": "./img/artwork/dresses-black-white-artwork.jpg"
         }
 
-      ]    
+      ] ,
+
+      "dresses": [
+
+        {
+          "id": 1,
+          "title": "A dresss",
+          "description": "exciting",
+          "src": "./img/artwork/dresses/paty-beginning-dress-black-white.jpeg"
+        }
+
+
+      ]  
+
+
+
+     
+
     }
   },
 
@@ -179,11 +196,12 @@
 
     "draw": {
 
-      "title": "Di más sin palabras",
-      "description":"",
+      "id": 1,
+      "title": "Make Draws talks for you",
+      "description":"I just want to show you guys how I sketch my drawings, the beginning of something cool and artsy. As you see, not perfect. It takes me kinda long to get a drawing to look like the picture. And sometimes it even starts looking alike when I’m already adding colors and shadows. The thing is, don’t give up. It’ll never be perfect when you starts. ",
 
-      "icon": "",
-      "image": "",
+      "icon": "https://cdn4.iconfinder.com/data/icons/unicons/88/activities-painting-512.png",
+      "image": "./img/artwork/hands-touching-artwork.jpg",
 
       "selling": {
 
@@ -200,11 +218,12 @@
 
     "fashionDesign": {
 
-      "title": "",
-      "description":"",
+      "id": 2,
+      "title": "De hilos a Vestidos: Design Fashion as You like",
+      "description":" “I’m Raven Baxter, and I wear my own designs” ¡Porque los amo! Y yo sé que tu también puedes amarlo  ",
 
-      "icon": "",
-      "image": "",
+      "icon": "https://cdn2.iconfinder.com/data/icons/e-commerce-4/256/Size-512.png",
+      "image": "./img/artwork/dresses/paty-beginning-dress-black-white.jpeg",
 
       "selling": {
 
@@ -221,11 +240,12 @@
 
     "sing": {
 
-      "title": "",
-      "description":"",
+      "id": 3,
+      "title": "Alls needs a Paty Time and a Song",
+      "description":"Let's get fun! I wanna animate the karaoke of your Party time, make people dance, laugh with music, talk me and lets do it! ",
 
-      "icon": "",
-      "image": "",
+      "icon": "https://cdn2.iconfinder.com/data/icons/the-voice/300/Singer-512.png",
+      "image": "./img/artwork/paty-selfie-smiling-artwork.jpg",
 
       "selling": {
 

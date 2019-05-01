@@ -10,7 +10,7 @@ import Title from "./content/title.js"
 import AboutMe from "./content/about-me.js"
 import Contact from "./content/contact.js"
 import Artworks from "../../../articles/components/artworks/containers/artworks-container.js";
-import Services from "./content/services.js"
+import Services from "./content/services-container.js"
 
 
 function HomePage(props) {

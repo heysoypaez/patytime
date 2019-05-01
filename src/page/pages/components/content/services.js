@@ -2,6 +2,7 @@ import React from "react";
 import "./services.scss"
 
 import Title from "./title.js"
+import Service from "./service.js"
 
 
 
@@ -9,45 +10,39 @@ import Title from "./title.js"
 function Services(props) {
 	
 
+	const  listServices = () => {
+		
+		const { services: servicesData } = props.data
+		let $services = [];
+
+		for (let service in servicesData ) {
+			
+			const {id, icon, title} = servicesData[service]
+
+			$services.push(
+
+		       	<Service 
+		       		key={id}
+		       		src={icon}
+		       		title={title}
+		       	/>
+			)
+		}
+
+		return $services
+	}
+
 	return(
 
-				<section> 
+			<section> 
 
-				<Title
+			   <Title text="Como te puedo ayudar" />
 
-					text="Como te puedo ayudar"
-				/>
-
-	       <section className="Services">
-
-					  <article>
-     			
-			       		<figure>
-					       <img src={props.data.artworks.categories.drawings[1].src} />       			
-			       		</figure>
-								<h1>{props.data.services.draw.title} </h1>	
-		       	</article>
-		       
-		       	<article>
-     			
-			       		<figure>
-					       <img src={props.data.artworks.categories.drawings[1].src} />       			
-			       		</figure>
-								<h1>{props.data.services.draw.title} </h1>	
-		       	</article>
-	
-					  <article>
-     			
-			       		<figure>
-					       <img src={props.data.artworks.categories.drawings[1].src} />       			
-			       		</figure>
-								<h1>{props.data.services.draw.title} </h1>	
-		       	</article>
-	       		
-	       </section>
+		       <section className="Services">
+		       		{ listServices() }		      		
+		       </section>
 
 	       </section>
-
 	 )
 }
 

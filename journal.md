@@ -62,85 +62,113 @@ Wednesday 24/04/19
 Sunday 28/04/19
 ===================
 
-*What i will do? Action Plan*
-----------------------------
+	*What i will do? Action Plan*
+	----------------------------
 
-1. ! [X ] I will resolve the Components that needs props in the React Router Component
-	1. [X] If there´s not i will create a Container
-	2. [X] I will pass there the props i needs
-	3. [X] I will pass there the data	
+	1. ! [X ] I will resolve the Components that needs props in the React Router Component
+		1. [X] If there´s not i will create a Container
+		2. [X] I will pass there the props i needs
+		3. [X] I will pass there the data	
 
-1. 4. [ ] All this is okey, but i need to show what Paty can and want do for You <Services />
+	1. 4. [ ] All this is okey, but i need to show what Paty can and want do for You <Services />
 
-	1. [X] Create the component < Services />
-	2. [X] Create the data structure in the API
-	3. [] Specify the data´s content in the API
-	4. [] Create the <Service /> Component
-	5. [] Create an Impactful Design
-	6. [] Connnect the specific data in the API with the Components (props && state) 
-
-What i did?
------------
-
-What is for the next session?
-------------------------------
+		1. [X] Create the component < Services />
+		2. [X] Create the data structure in the API
+		3. [] Specify the data´s content in the API
+		4. [] Create the <Service /> Component
+		5. [] Create an Impactful Design
+		6. [] Connnect the specific data in the API with the Components (props && state) 
 
 
-Ideas Catching
----------------
+	What is for the next session?
+	------------------------------
 
 
-Errors catching
---------------
-
-Free thoughts
-------------------
-
-I know Paty can serve other people and that also she wants to do it
-
-She can do it draw
-
-For her draw is a way to communicate, to express something that need to be expressed
-
-She can help in the decoration of places like restaurants
+	Ideas Catching
+	---------------
 
 
-She can do it designing a Dresses for girls or for a brand
+	Errors catching
+	--------------
+
+	Free thoughts
+	------------------
+
+		I know Paty can serve other people and that also she wants to do it
+
+		She can do it draw
+
+		For her draw is a way to communicate, to express something that need to be expressed
+
+		She can help in the decoration of places like restaurants
 
 
-She can sing
-
-She can animate people
-
-She is funny, she delight with her energy, she connects with bodys
-
-What is the Paty´s HADA ?
-
-She draw every day, she spent time in her art i loved art
-She makes me laugh, 
-She express her love
-She listen and make me express
-She takes action in important things
-She makes me experience the world through her eye
-She express love, energy in her things
+		She can do it designing a Dresses for girls or for a brand
 
 
-1. Comunicar más con Dibujos
-2. Diseñar TE vestuario
+		She can sing
 
-Comunicar sin palabras
+		She can animate people
 
-A
+		She is funny, she delight with her energy, she connects with bodys
 
-She is and smile living, una sonrisa que vive en su dia a dia
+		What is the Paty´s HADA ?
 
-D
-She have her own language, she say things with her touch "locote", "chamo" "mijo" "ay vaale"
+		She draw every day, she spent time in her art i loved art
+		She makes me laugh, 
+		She express her love
+		She listen and make me express
+		She takes action in important things
+		She makes me experience the world through her eye
+		She express love, energy in her things
 
-A
-Both are growingg
-Bot are making mistakes in this process
-Ella es una artistaa y yo soy un desarrollador etico
 
-Next day
+		1. Comunicar más con Dibujos
+		2. Diseñar TE vestuario
+
+		Comunicar sin palabras
+
+		A
+
+		She is and smile living, una sonrisa que vive en su dia a dia
+
+		D
+		She have her own language, she say things with her touch "locote", "chamo" "mijo" "ay vaale"
+
+		A
+		Both are growingg
+		Bot are making mistakes in this process
+		Ella es una artistaa y yo soy un desarrollador etico
+
+Tuesday 30/03/19
 ===================
+
+_I have created de Component Services_
+
+1. 4. [ ] But i need to show what Paty can and want do for You <Services />
+
+	1. [X] Specify the data´s content in the API _(for now)_
+		1. [x] icon
+
+	2. [X] Create the <Service /> Component
+	3. [] Create an Impactful Design
+	4. [X] Connnect the specific data in the API with the Components (props && state) 
+	5. [] Move this to the Container Services Component
+
+	Ideas Catching
+	---------------
+
+		When she does click will popup a Modal with the exciting story about the service and a button to contact her
+
+		The whatsapp button needs to have a props with the text
+
+
+
+	Errors catching
+	--------------
+
+	Free thoughts
+	------------------
+
+
+
