@@ -9,7 +9,7 @@ function Modal(props) {
 
 	
 		{props.children}
-		<button className="Modal-close" onClick={props.handleClick}>X</button>
+		<button className="Modal-close" onClick={props.handleClose}>X</button>
 		</section>
 
 	)

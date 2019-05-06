@@ -1,5 +1,5 @@
 import React from "react";
-import Title from "./title.js"
+import Title from "../../../page//pages/components/content/title.js"
 
 const Service = (props) => {
 	
@@ -8,11 +8,15 @@ const Service = (props) => {
 	       		<figure>
 			       <img src={props.src} />       			
 	       		</figure>
-						<h1>{props.title} </h1>	
-				<Title 
-					text="Conoce más"
-				/>
+				
 
+						<h1>{props.title} </h1>	
+
+				<button onClick={props.handleOnClickModal}> 
+					<Title 
+						text="Conoce más"
+					/>
+				</button>
        	</article>
 	)
 }

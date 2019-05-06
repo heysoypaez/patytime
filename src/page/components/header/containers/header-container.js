@@ -2,8 +2,7 @@ import React, {Component} from "react"
 import Header from "../components/header.js"
 import MenuNavigator from "../components/menu-navigator.js"
 
-import Modal from "../../../../base/modal/components/modal.js"
-import ModalContainer from "../../../../base/modal/containers/modal-container.js"
+import Modal from "../../../../base/modal/containers/modal-container.js"
 
 
 class HeaderContainer extends Component {
@@ -46,15 +45,11 @@ class HeaderContainer extends Component {
 
 			{
 					this.state.modalVisible &&
-					<ModalContainer>
-
-						<Modal
-						handleClick={this.handleCloseModal}
-						>
+					<Modal
+						handleClose={this.handleCloseModal}
+					>
 							<MenuNavigator />
-				
-						</Modal> 			
-					</ModalContainer> 
+					</Modal> 			
 					
 				}
 

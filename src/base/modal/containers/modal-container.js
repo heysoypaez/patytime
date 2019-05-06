@@ -1,5 +1,6 @@
-import {Component} from "react";
+import React, {Component} from "react";
 import {createPortal} from "react-dom";
+import Modal from "../components/modal.js"
 
 class ModalContainer extends Component {
 
@@ -10,7 +11,11 @@ class ModalContainer extends Component {
 
 		return createPortal(
 
-			this.props.children,
+			<Modal
+				handleClose = {this.props.handleClose}
+			>
+			{this.props.children}
+			</Modal>,
 			modalContainer
 
 			)

@@ -143,17 +143,67 @@ Sunday 28/04/19
 Tuesday 30/03/19
 ===================
 
+	_I have created de Component Services_
+
+	1. 4. [ ] But i need to show what Paty can and want do for You <Services />
+
+		1. [X] Specify the data´s content in the API _(for now)_
+			1. [x] icon
+
+		2. [X] Create the <Service /> Component
+		3. [] Create an Impactful Design
+		4. [X] Connnect the specific data in the API with the Components (props && state) 
+		5. [] Move this to the Container Services Component
+
+		Ideas Catching
+		---------------
+
+			When she does click will popup a Modal with the exciting story about the service and a button to contact her
+
+			The whatsapp button needs to have a props with the text
+
+
+
+		Errors catching
+		--------------
+
+		Free thoughts
+		------------------
+
+Saturday 04/04/19
+===================
+
+	_I have created de Component Services_
+
+	1. 4. [ ] But i need to show what Paty can and want do for You <Services />
+
+		1. [X] Create an Impactful Design 
+		2. [X] Move this to the Container Services Component
+
+		Ideas Catching
+		---------------
+
+			When she does click will popup a Modal with the exciting story about the service and a button to contact her
+
+			The whatsapp button needs to have a props with the text
+
+
+
+		Errors catching
+		--------------
+
+		Free thoughts
+		------------------
+
+
+Sunday 05/04/19
+===================
+
 _I have created de Component Services_
 
 1. 4. [ ] But i need to show what Paty can and want do for You <Services />
 
-	1. [X] Specify the data´s content in the API _(for now)_
-		1. [x] icon
-
-	2. [X] Create the <Service /> Component
-	3. [] Create an Impactful Design
-	4. [X] Connnect the specific data in the API with the Components (props && state) 
-	5. [] Move this to the Container Services Component
+	Final. [X] Send _____ with a Loop calling the API 
 
 	Ideas Catching
 	---------------
@@ -169,6 +219,5 @@ _I have created de Component Services_
 
 	Free thoughts
 	------------------
-
 
 
