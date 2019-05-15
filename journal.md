@@ -205,14 +205,10 @@ _I have created de Component Services_
 
 	Final. [X] Send _____ with a Loop calling the API 
 
+
+a
 	Ideas Catching
 	---------------
-
-		When she does click will popup a Modal with the exciting story about the service and a button to contact her
-
-		The whatsapp button needs to have a props with the text
-
-
 
 	Errors catching
 	--------------

@@ -6,21 +6,23 @@ import Service from "./service.js"
 import Modal from "../../../base/modal/containers/modal-container.js"
 
 
-
- class ServicesContainer extends Component {
+class ServicesContainer extends Component {
  	
  	state = {
- 		modalVisible: false
+ 		modalVisible: false,
+ 		serviceSelected: null
  	}
 
- 	handleOnClickModal = () => {
- 		
+ 	handleOnClickModal = (event, id) => {
+		
+
  		this.setState({
- 			modalVisible: !this.state.modalVisible
+ 			modalVisible: !this.state.modalVisible,
+ 			serviceSelected: parseInt(id)
  		})
  	}
 
-	listServices() {
+	listServices = () => {
 		
 		const { services: servicesData } = this.props.data
 		let $services = [];
@@ -35,7 +37,9 @@ import Modal from "../../../base/modal/containers/modal-container.js"
 		       		key={id}
 		       		src={icon}
 		       		title={title}
-		       		handleOnClickModal = {this.handleOnClickModal}
+		       		handleOnClickModal = { () => {
+		       			this.handleOnClickModal(null, id)
+		       		}}
 		       	/>
 			)
 		}
@@ -43,7 +47,32 @@ import Modal from "../../../base/modal/containers/modal-container.js"
 		return $services
 	}
 
+	renderServiceSelected = () => {
 
+		const { services: servicesData } = this.props.data;
+
+		for( let service in servicesData) {
+
+				const {id, image, title, description} = servicesData[service]
+
+				if(id === this.state.serviceSelected) {
+
+					return(
+
+		       	<section key={id}>
+			       	<h1>{ title }</h1>
+							<p>{ description }</p>
+							<figure>
+								<img src={image} width="130px" />
+							</figure>
+						</section>
+					)
+				}
+			}
+
+	
+		/*Returns an object with the serviceSelected*/
+	}
 
 	render() {
 
@@ -59,14 +88,12 @@ import Modal from "../../../base/modal/containers/modal-container.js"
 
 			{
 					this.state.modalVisible &&
+
+
 					<Modal 
 						handleClose = {this.handleOnClickModal}
 					> 
-						<h1>{ draw.title }</h1>
-						<p>{ draw.description }</p>
-						<figure>
-							<img src={draw.image} width="130px" />
-						</figure>
+						{this.renderServiceSelected()}
 					</Modal>
 		
 				}

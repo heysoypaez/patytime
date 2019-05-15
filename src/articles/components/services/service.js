@@ -12,12 +12,14 @@ const Service = (props) => {
 
 						<h1>{props.title} </h1>	
 
-				<button onClick={props.handleOnClickModal}> 
+				<button onClick={props.handleOnClickModal}  > 
+				
 					<Title 
-						text="Conoce más"
+						text="Conoce máss"
 					/>
+
 				</button>
-       	</article>
+     </article>
 	)
 }
 
