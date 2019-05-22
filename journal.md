@@ -12,7 +12,7 @@ Core Plan
 	3. [X] I need show the Magic Paty creates, her artworks <Artworks />
 		1. I need to show a Modal with the details of the Artwork
 
-	4. [ ] All this is okey, but i need to show what Paty can and want do for You <Services />
+	4. [ X ] All this is okey, but i need to show what Paty can and want do for You <Services />
 	5. [ ] People wanna see what happens today, now, I need her updated arts platforms <SocialNetworks />
 	6. [X] Enough ? Yes but i wanna talk with her what can i do, i need show how people can contact her <Contact />
 
@@ -215,5 +215,33 @@ a
 
 	Free thoughts
 	------------------
+
+
+
+Sunday 05/04/19
+===================
+
+_I have created de Component Services_
+
+1. 4. [ ] But i need to show what Paty can and want do for You <Services />
+
+	Final. [X] Send _____ with a Loop calling the API 
+
+
+a
+	Ideas Catching
+	---------------
+
+	Errors catching
+	--------------
+
+	Free thoughts
+	------------------
+
+	Proximos pasos
+	------------------
+
+	Crear pagina para cada artwork dinamicamente
+	enlazarlo con el componente de artwork category
 
 

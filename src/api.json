@@ -9,42 +9,42 @@
           "id": 1,
           "title": "An exciting tiger",
           "description": "Hacer esto cuesta mi hermano",
-          "src": "./img/artwork/tiger-artwork.png"
+          "src": "./img/artwork/drawings/tiger-artwork.png"
         },
 
         {
           "id": 2,
           "title": "Hands Touching",
           "description": "Hacer esto cuesta mi hermano",
-          "src": "./img/artwork/hands-touching-artwork.jpg"
+          "src": "./img/artwork/drawings/hands-touching-artwork.jpg"
         },
 
         {
           "id": 3,
           "title": "Chama mete la lengua",
           "description": "Hacer esto cuesta mi hermano",
-          "src": "./img/artwork/carmen-selfie-tongue-out-artwork.png"
+          "src": "./img/artwork/drawings/carmen-selfie-tongue-out-artwork.png"
         },
 
         {
           "id": 4,
           "title": "Mirada al horizonte",
           "description": "Me encanta",
-          "src": "./img/artwork/girl-digital-selfie-artwork.png"
+          "src": "./img/artwork/drawings/girl-digital-selfie-artwork.png"
         },
 
         {
           "id": 5,
           "title": "El hombre mono mira los patos",
           "description": "Prohibido reirse",
-          "src": "./img/artwork/man-monkey-and-ducks-artwork.jpg"
+          "src": "./img/artwork/drawings/man-monkey-and-ducks-artwork.jpg"
         },
 
         {
           "id": 6,
           "title": "Mama en Blanco y Negro",
           "description": "Chico, ¿Habeis pensado alguna vez lo que una mamá ama a sus hijos?",
-          "src": "./img/artwork/mom-dark-white-artwork.jpg"
+          "src": "./img/artwork/drawings/mom-dark-white-artwork.jpg"
         },
 
 
@@ -52,7 +52,7 @@
           "id": 7,
           "title":"Hombre de lentes en acuarela",
           "description": "Lo que tiene en la mano es un lapiz",
-          "src": "./img/artwork/man-acuarela-four-pictures.jpg"
+          "src": "./img/artwork/drawings/man-acuarela-four-pictures.jpg"
         },
 
 
@@ -60,94 +60,175 @@
           "id": 8,
           "title": "Mis primeras modelos para mis vestidos",
           "description": "Y ahora estoy estudiando fashion design !",
-          "src": "./img/artwork/girls-fashion-design-artwork.jpg"
+          "src": "./img/artwork/drawings/girls-fashion-design-artwork.jpg"
         },
 
         {
           "id": 9,
           "title": "Modelo Fashion",
           "description": "Alta, botas, patas anchas, ¿No te encanta?",
-          "src": "./img/artwork/model-fashion-wear-artwork.jpg"
+          "src": "./img/artwork/drawings/model-fashion-wear-artwork.jpg"
         },
 
         {
           "id": 10,
           "title": "Edgar Ramirez, Súper Actor Venezolanos",
           "description": "Gracias por tus peliculas tan locotas :3",
-          "src": "./img/artwork/edgar-ramirez-selfie-artwork.jpg"
+          "src": "./img/artwork/drawings/edgar-ramirez-selfie-artwork.jpg"
         },
 
         {
           "id": 11,
           "title": "Esa soy Yooo, Paty",
           "description": "Mira mi pelo largo",
-          "src": "./img/artwork/paty-selfie-smiling-artwork.jpg"
+          "src": "./img/artwork/drawings/paty-selfie-smiling-artwork.jpg"
         },
 
         {
           "id": 12,
           "title": "Corazon de Patacon",
           "description": "Mijo, un patacon es una fritura de platano pero sabrosa en mi país, ¿Quereis uno?",
-          "src": "./img/artwork/corazon-de-patacon-artwork.jpg"
+          "src": "./img/artwork/drawings/corazon-de-patacon-artwork.jpg"
         },
 
         {
           "id": 13,
           "title": "Vestidos, faldas en blanco y negro",
           "description": "Practicando",
-          "src": "./img/artwork/dresses-black-white-artwork.jpg"
+          "src": "./img/artwork/drawings/dresses-black-white-artwork.jpg"
         },
 
         {
           "id": 14,
           "title": "Vestidos, faldas en blanco y negro",
           "description": "Practicando",
-          "src": "./img/artwork/dresses-black-white-artwork.jpg"
+          "src": "./img/artwork/drawings/turpial-in-branch-paty-drawing-artwork.jpg"
         },
 
         {
           "id": 15,
-          "title": "Vestidos, faldas en blanco y negro",
+          "title": "Aguacates",
           "description": "Practicando",
-          "src": "./img/artwork/dresses-black-white-artwork.jpg"
+          "src": "./img/artwork/drawings/avocado-aguacate-paty-drawing-artwork.jpg"
         },
 
         {
           "id": 16,
-          "title": "Vestidos, faldas en blanco y negro",
-          "description": "Practicando",
-          "src": "./img/artwork/dresses-black-white-artwork.jpg"
+          "title": "I am groot",
+          "description": "Guy from the guardians of the galaxy",
+          "src": "./img/artwork/drawings/i-am-groot-guardians-galaxy-paty-drawing-artwork.jpg"
         },
 
 
         {
           "id": 17,
-          "title": "Vestidos, faldas en blanco y negro",
+          "title": "Demi Lovato Smiling",
           "description": "Practicando",
-          "src": "./img/artwork/dresses-black-white-artwork.jpg"
+          "src": "./img/artwork/drawings/demi-lovato-smiling-paty-drawing-artwork.jpg"
         },
 
         {
           "id": 18,
           "title": "Vestidos, faldas en blanco y negro",
           "description": "Practicando",
-          "src": "./img/artwork/dresses-black-white-artwork.jpg"
+          "src": "./img/artwork/drawings/orca-whale-paty-drawing-artwork.jpg"
         },
 
         {
           "id": 19,
           "title": "Vestidos, faldas en blanco y negro",
           "description": "Practicando",
-          "src": "./img/artwork/dresses-black-white-artwork.jpg"
+          "src": "./img/artwork/drawings/roasted-food-paty-drawing-artwork.jpg"
         },
 
         {
           "id": 20,
           "title": "Vestidos, faldas en blanco y negro",
           "description": "Practicando",
-          "src": "./img/artwork/dresses-black-white-artwork.jpg"
-        }
+          "src": "./img/artwork/drawings/thin-girl-dress-weared-paty-drawing-artwork.jpg"
+        },
 
+        {
+          "id": 21,
+          "title": "Vestidos, faldas en blanco y negro",
+          "description": "Practicando",
+          "src": "./img/artwork/drawings/edgar-ramirez-selfie-paty-artwork.png"
+        },
+
+        {
+          "id": 22,
+          "title": "Vestidos, faldas en blanco y negro",
+          "description": "Practicando",
+          "src": "./img/artwork/drawings/poison-ysma-kuzko-disney-paty-artwork.jpg"
+        },
+
+        {
+          "id": 23,
+          "title": "Happy Birthday Bruno Mars",
+          "description": "Practicando",
+          "src": "./img/artwork/drawings/bruno-mars-happpy-birthday-paty-artwork.jpg"
+        },
+
+        {
+          "id": 24,
+          "title": "Woody Toy Story",
+          "description": "Practicando",
+          "src": "./img/artwork/drawings/woody-toy-story-disney-paty-artwork.jpg"
+        },
+
+        {
+          "id": 25,
+          "title": "Vestidos, faldas en blanco y negro",
+          "description": "Practicando",
+          "src": "./img/artwork/drawings/kuzco-emperor-llama-disney-paty-artwork.jpg"
+        },
+
+        {
+          "id": 26,
+          "title": "Vestidos, faldas en blanco y negro",
+          "description": "Practicando",
+          "src": "./img/artwork/drawings/moana-disney-paty-artwork.jpg"
+        },
+
+        {
+          "id": 27,
+          "title": "Vestidos, faldas en blanco y negro",
+          "description": "Practicando",
+          "src": "./img/artwork/drawings/mike-wazosky-disney-drawing-pat-artwork.jpg"
+        },
+
+        {
+          "id": 28,
+          "title": "Vestidos, faldas en blanco y negro",
+          "description": "Practicando",
+          "src": "./img/artwork/drawings/prickly-drawing-pat-artwork.jpg"
+        },
+
+        {
+          "id": 29,
+          "title": "Vestidos, faldas en blanco y negro",
+          "description": "Practicando",
+          "src": "./img/artwork/drawings/rapunzel-enredados-disney-drawing-pat-artwork.jpg"
+        },
+
+        {
+          "id": 30,
+          "title": "Vestidos, faldas en blanco y negro",
+          "description": "Practicando",
+          "src": "./img/artwork/drawings/woman-gum-paty-drawing-artwork.jpg"
+        },
+        {
+          "id": 31,
+          "title": "Vestidos, faldas en blanco y negro",
+          "description": "Practicando",
+          "src": "./img/artwork/drawings/venezuela-turpial-salto-angel-cascada-artwork.jpeg"
+        },
+        {
+          "id": 32,
+          "title": "Vestidos, faldas en blanco y negro",
+          "description": "Practicando",
+          "src": "./img/artwork/drawings/ancient-dresses-artwork.jpeg"
+        }
       ] ,
 
       "dresses": [
@@ -156,16 +237,25 @@
           "id": 1,
           "title": "A dresss",
           "description": "exciting",
-          "src": "./img/artwork/dresses/paty-beginning-dress-black-white.jpeg"
+          "src": "./img/artwork/drawings/dresses/black-and-white-paty-modeling-paty-dress.jpeg"
+        },
+
+
+        {
+          "id": 2,
+          "title": "A dresss",
+          "description": "exciting",
+          "src": "./img/artwork/drawings/dresses/blue-paty-short-dress.jpeg"
+        },
+
+
+        {
+          "id": 3,
+          "title": "A dresss",
+          "description": "exciting",
+          "src": "./img/artwork/drawings/dresses/black-and-white-paty-dress.jpeg"
         }
-
-
       ]  
-
-
-
-     
-
     }
   },
 
@@ -181,7 +271,6 @@
         "email": "patriciaromero2000@gmail.com",
         "phone": "17866249408"
         }
-
     ],
 
   "external": {
@@ -201,7 +290,7 @@
       "description":"I just want to show you guys how I sketch my drawings, the beginning of something cool and artsy. As you see, not perfect. It takes me kinda long to get a drawing to look like the picture. And sometimes it even starts looking alike when I’m already adding colors and shadows. The thing is, don’t give up. It’ll never be perfect when you start. ",
 
       "icon": "https://cdn4.iconfinder.com/data/icons/unicons/88/activities-painting-512.png",
-      "image": "./img/artwork/hands-touching-artwork.jpg",
+      "image": "./img/artwork/drawings/hands-touching-artwork.jpg",
 
       "selling": {
 
@@ -223,7 +312,7 @@
       "description":" “I’m Raven Baxter, and I wear my own designs” ¡Porque los amo! Y yo sé que tu también puedes amarlo  ",
 
       "icon": "https://cdn2.iconfinder.com/data/icons/e-commerce-4/256/Size-512.png",
-      "image": "./img/artwork/dresses/paty-beginning-dress-black-white.jpeg",
+      "image": "./img/artwork/drawings/dresses/paty-beginning-dress-black-white.jpeg",
 
       "selling": {
 
@@ -245,7 +334,7 @@
       "description":"Let's get fun! I wanna animate the karaoke of your Party time, make people dance, laugh with music, talk me and lets do it! ",
 
       "icon": "https://cdn2.iconfinder.com/data/icons/the-voice/300/Singer-512.png",
-      "image": "./img/artwork/paty-selfie-smiling-artwork.jpg",
+      "image": "./img/artwork/drawings/paty-selfie-smiling-artwork.jpg",
 
       "selling": {
 

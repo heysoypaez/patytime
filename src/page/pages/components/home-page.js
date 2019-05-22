@@ -18,7 +18,10 @@ function HomePage(props) {
 	const {data} = props;
 	const Paty = data.users[0];
 
+
+
 	return(
+
 
 		<Page > 
 		<section className="Home">
