@@ -26,18 +26,6 @@ class ArtworksPageContainer extends Component {
 		})
 	}
 
-	showKey = () => {
-
-		let box = []
-
-		for(let key in this.state.data.artworks.categories) {
-			box.push(key);
-		}
-
-		return console.log(box)
-	
-	}
-
 
 	render() {
 
