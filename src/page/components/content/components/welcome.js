@@ -7,7 +7,9 @@ const Welcome = (props) => (
 
 		<h1>Hello, Is Paty time my friend</h1>
 
-		<img src={process.env.PUBLIC_URL + '/img/artwork/paty-family-artwork.jpg'} />
+		<img 
+			src={`${process.env.PUBLIC_URL}/img/artwork/drawings/paty-family-artwork.jpg`}
+		/>
 		
 	</section>
 )
