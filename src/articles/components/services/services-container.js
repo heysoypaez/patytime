@@ -22,14 +22,16 @@ class ServicesContainer extends Component {
  		})
  	}
 
+
+ 	
 	listServices = () => {
 		
-		const { services: servicesData } = this.props.data
+		const { services } = this.props.data
 		let $services = [];
 
-		for (let service in servicesData ) {
+		for (let service in services ) {
 			
-			const {id, icon, title} = servicesData[service]
+			const {id, icon, title} = services[service]
 
 			$services.push(
 
