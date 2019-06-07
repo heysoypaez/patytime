@@ -18,8 +18,15 @@ class ArtworksContainer extends Component {
 
 	componentWillMount = () => {
 
+		/*Variables 
+		Declaration && Assignement
+		------------------------*/
 
+		const {$artworks } = this.state;
+		const { limit, category } = this.props;
 		this.artworks = this.state.data.artworks.categories;
+
+		console.log($artworks)
 	
 		for( let category in this.artworks) {
 
@@ -42,26 +49,58 @@ class ArtworksContainer extends Component {
 				)
 		}
 
-
-		const { limit, category } = this.props;
-
 		if(category) {
+			
+			console.log(category)
 
-       /*this.state.$artworks.filter(
+			//Testing
 
-				() => data.artworks.category === $artwork.category
-				)
-			)*/			
+			if(category[0] === "drawings") {
+
+				const drawings = this.state.$artworks[0] ;
+
+				this.setState({
+					$artworks: drawings
+				})
+			}
+
+			if(category[0] === "dresses") {
+
+				const dresses = this.state.$artworks[1] ;
+
+				this.setState({
+					$artworks: dresses
+				})
+			}
+
+
+			//OUTPUT I will get the artworks of drawings
+
+			/*Quiero mostrar artworks por categorias especificas
+
+Por ejemplo si en category le paso ["dresses"] me pasara dresses
+
+Si le paso ["drawings"] me pasará drawings, sabemos que drawings esta en el index 0 del array de arworks
+
+Si no le paso nada me pasara todas las categorias
+
+recuerda que mis artworks estan dentro de this.state.$artworks 
+	
+
+	Funciona!
+
+	Pero tenemos un bug con la manera en que interactua con limit	
+			*/		
 		}
 
 		if(limit) {
 
 			console.log(limit)
 
+
 			const $artworksLimitted = ( ) => {
 
 				let newArtlist = [];
-				const {$artworks } = this.state;
 
 				const filterArtworks = (item, index) => {
 				 	return index < Math.round(limit/$artworks.length)
@@ -152,7 +191,6 @@ class ArtworksContainer extends Component {
 			this.setState({
 				$artworks: $artworksLimitted() 
 			})
-
 		}
 	}
 

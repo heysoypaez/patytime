@@ -20,8 +20,9 @@ function  ArtworksPage(props) {
 		   />	
 
 		   <Artworks 
-		   limit={4}
-		   />
+		   category={ [""] }
+
+		 		   />
 	   </Page>
 	)
 }

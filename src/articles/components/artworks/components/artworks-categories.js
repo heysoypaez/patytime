@@ -31,14 +31,17 @@ class ArtworksCategories extends Component {
 
 		for (let category in categories ) {
 			
+			const categoryName = this.showKey(index, categories);
+
 			$categories.push(
 
 			  <article className="Artworks-category" key={index} >
 					<Link 
-						to={`/artworks/${this.showKey(index, categories)}`}
+						to={`/artworks/${categoryName}`}
 						className="Link"
+						
 					> 
-			 	 			<h2>{ this.showKey(index, categories) }</h2>
+			 	 			<h2>{ categoryName }</h2>
 				 	</Link>
 	  		</article>
 			)
