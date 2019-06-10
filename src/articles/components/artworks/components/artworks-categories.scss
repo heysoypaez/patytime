@@ -1,0 +1,28 @@
+@import "../../../../styles/lib/_variables.scss";
+
+.Artworks-categories {
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 50px 0; 
+
+
+}
+
+.Artworks-category {
+
+	cursor: pointer;
+
+	padding: 30px 40px;
+
+	border-radius: 	10px; 
+	background-image: $color-brand-principal;
+
+	max-height: 15vh;
+}
+
+.Artworks-category .Link {
+		color: white;	
+}
+

@@ -8,30 +8,9 @@ class ArtworksPageContainer extends Component {
 	state = {
 
 		data: data,
-		characters: null
 	}
-
-	componentDidMount() {
-
-		this.fetchCharacters()
-
-	}
-
-	fetchCharacters = async () => {
-		const response = await fetch("https://rickandmortyapi.com/api/character/")
-		const data = await response.json();
-
-		this.setState({
-			characters: data
-		})
-	}
-
 
 	render() {
-
-		console.log(this.state.characters)
-
-		this.showKey()
 
 		return(
 

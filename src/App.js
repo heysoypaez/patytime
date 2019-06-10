@@ -5,20 +5,26 @@ import HomePage from "./page/pages/containers/home-page-container.js"
 import ArtworksPage from "./page/pages/containers/artworks-page-container.js"
 
 //React Router
-import { BrowserRouter as Router , Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router , Route, Switch} from "react-router-dom";
+
+import data from "./api.json"
 
 
 function App() {
+
   return (
     <Router>
-      <div>
+      <Switch>
  
-        <Route path="/"  exact component={HomePage} />
+        <Route exact path="/"  component={HomePage} />
+        
         <Route path="/artworks/" component={ArtworksPage} />
-      </div>
-    </Router>
-  );
-}
+          <Route exact path="/artworks/drawings" component={ArtworksPage} />
+  				<Route exact path="/artworks/dresses" component={ArtworksPage} />
 
+      </Switch>
+    </Router>
+  );  
+}
 
 export default App;
