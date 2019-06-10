@@ -20,9 +20,8 @@ function  ArtworksPage(props) {
 		   />	
 
 		   <Artworks 
-		   category={ [""] }
-
-		 		   />
+		  	 category={ ["dresses"] }
+		 		/>
 	   </Page>
 	)
 }

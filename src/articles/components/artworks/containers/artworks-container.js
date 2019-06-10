@@ -14,6 +14,7 @@ class ArtworksContainer extends Component {
 	state = {
 		data: data,
 		$artworks: [] ,
+		$artworksLast: []
 	}
 
 	componentWillMount = () => {
@@ -25,9 +26,7 @@ class ArtworksContainer extends Component {
 		const {$artworks } = this.state;
 		const { limit, category } = this.props;
 		this.artworks = this.state.data.artworks.categories;
-
-		console.log($artworks)
-	
+		
 		for( let category in this.artworks) {
 
 
@@ -51,46 +50,39 @@ class ArtworksContainer extends Component {
 
 		if(category) {
 			
-			console.log(category)
+			const setCategory = async() => {
 
-			//Testing
-
-			if(category[0] === "drawings") {
-
-				const drawings = this.state.$artworks[0] ;
-
-				this.setState({
-					$artworks: drawings
+				await this.setState({
+					$artworksLast: this.state.$artworks,
+					$artworks: []
 				})
+			
+				for(let i= 0; i < category.length; i++) {
+						
+					if(category[i] === "drawings") {
+		
+						const drawings = this.state.$artworksLast[0] ;
+
+						this.setState({
+							$artworks: [ ...this.state.$artworks , drawings ]
+						})
+					}
+
+					if(category[i] === "dresses") {
+					
+						const dresses = this.state.$artworksLast[1] ;
+									
+						this.setState({
+							$artworks: [...this.state.$artworks , dresses]
+						})
+					}
+
+					return this.state.$artworks;
+
+				}
 			}
 
-			if(category[0] === "dresses") {
-
-				const dresses = this.state.$artworks[1] ;
-
-				this.setState({
-					$artworks: dresses
-				})
-			}
-
-
-			//OUTPUT I will get the artworks of drawings
-
-			/*Quiero mostrar artworks por categorias especificas
-
-Por ejemplo si en category le paso ["dresses"] me pasara dresses
-
-Si le paso ["drawings"] me pasará drawings, sabemos que drawings esta en el index 0 del array de arworks
-
-Si no le paso nada me pasara todas las categorias
-
-recuerda que mis artworks estan dentro de this.state.$artworks 
-	
-
-	Funciona!
-
-	Pero tenemos un bug con la manera en que interactua con limit	
-			*/		
+			setCategory();	
 		}
 
 		if(limit) {
@@ -203,3 +195,19 @@ recuerda que mis artworks estan dentro de this.state.$artworks
 
 export default ArtworksContainer;
 
+/*
+Cuaderno de Desarrollo
+=======================
+
+Quiero mostrar artworks por categorias especificas
+
+-Si no le paso nada me pasara todas las categorias
+
+-recuerda que mis artworks estan dentro de this.state.$artworks 
+	
+Funciona!
+
+Pero tenemos un bug con la manera en que interactua con limit	
+
+Lo que haré ahora será revisar para quitar números fijos y proceder a corregir ese conflicto en category y limit
+*/	
