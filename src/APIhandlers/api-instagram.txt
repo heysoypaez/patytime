@@ -1,0 +1,34 @@
+
+
+https://api.instagram.com/v1/self/media/recent?access_token=ACCESS_TOKEN
+
+
+
+3a50ec6cdccd4172aa6dd70301339946
+
+
+
+f4dafd671ce54425b1b08d6d9120a17b
+
+
+
+https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=code
+
+
+http://your-redirect-uri?code=CODE
+
+
+
+
+Client-Side (Implicit) Authentication
+If you are building an app that does not have a server component (a purely javascript app, for instance), you will notice that it is impossible to complete step three above to receive your access_token without also having to store the secret on the client. You should never pass or store your client_id secret onto a client. For these situations there is the Implicit Authentication Flow.
+
+Step One: Direct your user to our authorization URL
+https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=token
+At this point, we present the user with a login screen and then a confirmation screen where they grant your app’s access to their Instagram data. Note that unlike the explicit flow the response type here is “token”.
+
+Step Two: Receive the access_token via the URL fragment
+Once the user has authenticated and then authorized your application, Instagram redirects them to your redirect_uri with the access_token in the url fragment. It will look like this:
+
+http://your-redirect-uri#access_token=ACCESS-TOKEN
+Simply grab the access_token off the URL fragment and you’re good to go. If the user chooses not to authorize your application, you’ll receive the same error response as in the explicit flow

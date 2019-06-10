@@ -1,0 +1,19 @@
+.Artworks-Categories {
+
+
+		display: flex;
+		justify-content: space-around; 
+		margin: 50px 0;
+
+}
+
+.Artworks-Category {
+
+		display: block;
+		background-color: purple; 
+		height: 300px; 
+		width: 300px;
+		color: white;
+		text-align: center;
+		cursor: pointer;
+}

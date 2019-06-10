@@ -7,7 +7,7 @@ class ArtworksPageContainer extends Component {
 
 	state = {
 
-		data: data
+		data: data,
 	}
 
 	render() {
