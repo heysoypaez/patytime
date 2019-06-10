@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import "./artworks-categories.scss";
 
-import {BrowserRouter as Router, Link} from "react-router-dom"
+import {Link} from "react-router-dom"
 
 
 
@@ -29,8 +29,9 @@ class ArtworksCategories extends Component {
 		let $categories = [];
 		let index = 0
 
-		for (let category in categories ) {
-			
+		// eslint-disable-next-line
+		for (const category in categories ) {
+
 			const categoryName = this.showKey(index, categories);
 
 			$categories.push(
@@ -46,7 +47,9 @@ class ArtworksCategories extends Component {
 	  		</article>
 			)
 			index++
+
 		}
+
 		
 		return $categories
 	}

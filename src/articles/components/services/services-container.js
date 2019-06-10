@@ -65,7 +65,7 @@ class ServicesContainer extends Component {
 			       	<h1>{ title }</h1>
 							<p>{ description }</p>
 							<figure>
-								<img src={image} width="130px" />
+								<img src={image} width="130px" alt={title} />
 							</figure>
 						</section>
 					)
@@ -78,7 +78,6 @@ class ServicesContainer extends Component {
 
 	render() {
 
-		const {draw} = this.props.data.services
 
 		return (
 			<div>
