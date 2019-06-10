@@ -1,0 +1,9 @@
+@import "../../../styles/lib/_variables.scss";
+
+.Content {
+
+	display: grid;
+	grid-template-columns: 1fr;
+	column-gap: 25px;
+
+}

@@ -1,7 +1,7 @@
 import React from "react"
 import "./artworks.scss"
 
-import Title from "../../../../page/components/content/components/title.js"
+import Title from "../../../../pages/components/content/title.js"
 
 
 

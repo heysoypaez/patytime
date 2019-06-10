@@ -1,19 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 
-import HomePage from "./page/pages/containers/home-page-container.js"
-import ArtworksPage from "./page/pages/containers/artworks-page-container.js"
+import HomePage from "./pages/containers/home-page-container.js"
+import ArtworksPage from "./pages/containers/artworks-page-container.js"
 
 //React Router
 import { BrowserRouter as Router , Route, Switch} from "react-router-dom";
-
-import data from "./api.json"
 
 
 function App() {
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Switch>
  
         <Route exact path="/"  component={HomePage} />

@@ -1,0 +1,13 @@
+@import "../../../styles/lib/_variables.scss";
+
+.Contact {
+
+	display: grid;
+	
+	justify-items: center;
+	text-align: center;
+	font-family: $font-brand-secondary;
+
+	grid-template-columns: 1fr;
+
+}
