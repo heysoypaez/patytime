@@ -1,6 +1,5 @@
 // Here i will put my path to the App i am creating 
 
-
 Core Plan
 ----------
 
@@ -206,7 +205,7 @@ _I have created de Component Services_
 	Final. [X] Send _____ with a Loop calling the API 
 
 
-a
+
 	Ideas Catching
 	---------------
 
@@ -215,7 +214,6 @@ a
 
 	Free thoughts
 	------------------
-
 
 
 Sunday 05/04/19
@@ -228,7 +226,7 @@ _I have created de Component Services_
 	Final. [X] Send _____ with a Loop calling the API 
 
 
-a
+
 	Ideas Catching
 	---------------
 
@@ -243,5 +241,96 @@ a
 
 	Crear pagina para cada artwork dinamicamente
 	enlazarlo con el componente de artwork category
+
+Thursday 12/06/19
+===================
+
+/*
+1.A Quiero una pagina donde salga las categorias de las artes de Paty
+	1. Eso lo logro a traves de un componente con JSX en React
+	2. Esa pagina va a ser la página de Artworks
+
+	Quiero que las categorias se creen como una lista dinamicamente en base a las categorias en la API.json
+	
+1.B Quiero que cuando hagas click en una categoria te lleve a una subpagina con todo el arte de la categoria seleccionada
+		1. Quiero hacer esto en base al archivo JSON
+		2. Eso que quiero lo logro a traves de:
+			1. Crear un metodo handleClick() en el componente categoria
+
+			2. Crear una subpagina con los artworks filtrados por cada categoria 
+				1. donde el filtro consistira en que la categoria clicada será la correspondiente a los que artworks que se desplegaran a partir del .json
+
+			3. Enviar al usuario a la subpagina que corresponde a la categoria al hacer click
+				1. Eso lo logro a traves de React Router
+				2. Y quiza con state
+
+1.C	Quiero que cada categoria luzca como un "card" clicable 
+	1. Eso lo diseño a traves de CSS
+		1. Reutiliza el diseño actual
+
+
+
+	   		<Link 
+	   			to={`artworks/${props.category}`} 
+	   		> 
+	   			<h2>props.title</h2>
+
+	   		</Link>
+
+*/
+
+
+
+/*
+Cuaderno de Desarrollo
+=======================
+
+Quiero mostrar artworks por categorias especificas
+
+-Si no le paso nada me pasara todas las categorias
+
+-recuerda que mis artworks estan dentro de this.state.$artworks 
+	
+Funciona!
+
+Pero tenemos un bug con la manera en que interactua con limit	
+
+Lo que haré ahora será revisar para quitar números fijos y proceder a corregir ese conflicto en category y limit
+
+
+=======
+
+
+			/*
+			¿Que quiero lograr?
+			Quiero filtrar las listas que estan dentro de la lista artworks a traves del estado de react
+
+			Para ello necesito acceder a las listas dentro del state artworks
+			-
+			Quiero que en total la cantidad mostrada sea la filtrada por el prop
+
+			Pero tengo la siguiente situacion
+
+			Mi state $artworks es una lista que a su vez contiene dos sublistas
+
+			existara una manera de ver la longitud total de artworks sumando la longitud de sus sublistas y filtrar esa longitud total?
+			
+			Me interesa mantenerlo como listas independientes
+
+			Hagamos el algoritmo
+
+			Si el limite es 4 entonces recorre el array artes
+
+			Y dentro del array artes recorreras cada lista que tiene por dentro
+
+			En base a esa lista crearemos una nueva lista que sea menor a 4 elementos (el limite) entre la cantidad de listas de artes redondeado a entero
+
+			Y asi pasaremos a la siguiente lista donde igualmente crearemos una nueva lista que sea menor a 4 elementos (el limite) entre la cantidad de listas de artes redondeado a entero
+
+			Finalmente al terminar de pasar lista por lista si la cantidad de elementos totales en ambas listas es igual al limite entonces hemos terminado
+
+			Y declararemos eso como el nuevo estado
+
+*/
 
 
