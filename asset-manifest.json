@@ -1,13 +1,13 @@
 {
-  "main.css": "/patytime/static/css/main.41fe7611.chunk.css",
-  "main.js": "/patytime/static/js/main.378e344c.chunk.js",
-  "main.js.map": "/patytime/static/js/main.378e344c.chunk.js.map",
+  "main.css": "/patytime/static/css/main.72c3bc21.chunk.css",
+  "main.js": "/patytime/static/js/main.110d98d0.chunk.js",
+  "main.js.map": "/patytime/static/js/main.110d98d0.chunk.js.map",
   "runtime~main.js": "/patytime/static/js/runtime~main.5c79a741.js",
   "runtime~main.js.map": "/patytime/static/js/runtime~main.5c79a741.js.map",
-  "static/js/2.9988344b.chunk.js": "/patytime/static/js/2.9988344b.chunk.js",
-  "static/js/2.9988344b.chunk.js.map": "/patytime/static/js/2.9988344b.chunk.js.map",
+  "static/js/2.c9582e05.chunk.js": "/patytime/static/js/2.c9582e05.chunk.js",
+  "static/js/2.c9582e05.chunk.js.map": "/patytime/static/js/2.c9582e05.chunk.js.map",
   "index.html": "/patytime/index.html",
-  "precache-manifest.27516e90956e29b4d85d6b90f38b65c7.js": "/patytime/precache-manifest.27516e90956e29b4d85d6b90f38b65c7.js",
+  "precache-manifest.7888904f24ad275b2c11d25a0f688b72.js": "/patytime/precache-manifest.7888904f24ad275b2c11d25a0f688b72.js",
   "service-worker.js": "/patytime/service-worker.js",
-  "static/css/main.41fe7611.chunk.css.map": "/patytime/static/css/main.41fe7611.chunk.css.map"
+  "static/css/main.72c3bc21.chunk.css.map": "/patytime/static/css/main.72c3bc21.chunk.css.map"
 }
