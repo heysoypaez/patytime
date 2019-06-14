@@ -5,7 +5,7 @@ function Modal(props) {
 
 	return(
 
-		<section className="Modal">
+		<section className={`${props.className} Modal`}>
 
 	
 		{props.children}
