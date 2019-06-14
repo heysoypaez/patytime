@@ -13,6 +13,7 @@ class ModalContainer extends Component {
 
 			<Modal
 				handleClose = {this.props.handleClose}
+				className = {this.props.className}
 			>
 			{this.props.children}
 			</Modal>,

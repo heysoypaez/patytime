@@ -93,6 +93,7 @@ class ServicesContainer extends Component {
 
 					<Modal 
 						handleClose = {this.handleOnClickModal}
+						className = "Service-details"
 					> 
 						{this.renderServiceSelected()}
 					</Modal>

@@ -12,18 +12,20 @@ class ArtworksContainer extends Component {
 		this.state = {
 		data: data,
 		$artworks: [] ,
-		$artworksLast: []
+		$artworksLast: [],
+		limit: this.props.limit,
+		category: this.props.category
 		}
 	}
 
-	componentWillMount = () => {
+	filterArtworks = () => {
 
 		/*Variables 
 		Declaration && Assignement
 		------------------------*/
 
 		const {$artworks } = this.state;
-		const { limit, category } = this.props;
+		const { limit, category } = this.state;
 		this.artworks = this.state.data.artworks.categories;
 		
 		for( let category in this.artworks) {
@@ -150,7 +152,31 @@ class ArtworksContainer extends Component {
 		}
 	}
 
+	componentWillMount = () => {
+		this.filterArtworks()
+	}
+
+	componentDidUpdate = (prevProps, prevState)  => {
+
+		if(prevProps !== this.props){
+
+				const updateArtworks = async() => {
+
+					await	this.setState({
+							category: this.props.category
+					})
+
+					this.filterArtworks()
+
+					console.log("El componente se actualizo")
+				}
+
+				updateArtworks()
+		}
+	}
+
 	render() {
+
 
 		return( <Artworks>{this.state.$artworks}</Artworks> )
 	}
@@ -158,58 +184,4 @@ class ArtworksContainer extends Component {
 }
 
 export default ArtworksContainer;
-
-/*
-Cuaderno de Desarrollo
-=======================
-
-Quiero mostrar artworks por categorias especificas
-
--Si no le paso nada me pasara todas las categorias
-
--recuerda que mis artworks estan dentro de this.state.$artworks 
-	
-Funciona!
-
-Pero tenemos un bug con la manera en que interactua con limit	
-
-Lo que haré ahora será revisar para quitar números fijos y proceder a corregir ese conflicto en category y limit
-
-
-=======
-
-
-			/*
-			¿Que quiero lograr?
-			Quiero filtrar las listas que estan dentro de la lista artworks a traves del estado de react
-
-			Para ello necesito acceder a las listas dentro del state artworks
-			-
-			Quiero que en total la cantidad mostrada sea la filtrada por el prop
-
-			Pero tengo la siguiente situacion
-
-			Mi state $artworks es una lista que a su vez contiene dos sublistas
-
-			existara una manera de ver la longitud total de artworks sumando la longitud de sus sublistas y filtrar esa longitud total?
-			
-			Me interesa mantenerlo como listas independientes
-
-			Hagamos el algoritmo
-
-			Si el limite es 4 entonces recorre el array artes
-
-			Y dentro del array artes recorreras cada lista que tiene por dentro
-
-			En base a esa lista crearemos una nueva lista que sea menor a 4 elementos (el limite) entre la cantidad de listas de artes redondeado a entero
-
-			Y asi pasaremos a la siguiente lista donde igualmente crearemos una nueva lista que sea menor a 4 elementos (el limite) entre la cantidad de listas de artes redondeado a entero
-
-			Finalmente al terminar de pasar lista por lista si la cantidad de elementos totales en ambas listas es igual al limite entonces hemos terminado
-
-			Y declararemos eso como el nuevo estado
-
-*/
-
-
 

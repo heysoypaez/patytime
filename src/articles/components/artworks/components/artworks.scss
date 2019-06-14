@@ -3,23 +3,41 @@
 
 	display: grid;
 
-
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) ) , 1fr;
 
 	grid-template-areas: "head head head"
-						 "item-a item-b item-c";
+											 "item item item";
 
 	margin: 50px;
 	column-gap: 25px;
 	row-gap: 25px;
 	justify-items: center;
 	align-items: center;
-
 }
 
 
 
 .Artworks .Title {
 	grid-area: head;
-	width: 70vw;
+}
+
+.Artwork {
+
+}
+
+@media screen and (max-width: 450px) {
+	
+	.Artworks	{
+	
+			grid-template-areas: "head"
+													 "item";
+		
+			column-gap: 5px;
+			row-gap: 5px;
+
+			margin: 0;
+
+			grid-template-columns: repeat(auto-fill, minmax(70vw, 90vw) );
+
+	}
 }

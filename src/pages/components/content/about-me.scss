@@ -23,6 +23,7 @@
 	padding: 0px 2%;
 	font-family: "Source Sans Pro", sans-serif;
 	margin-left: 5%;
+	grid-area: item-a;
 	
 }
 
@@ -33,6 +34,15 @@
 	height: auto;
 	border-radius: 90px;
 	z-index: 1;
+	grid-area: item-b;
 	
 }
 
+@media screen and (max-width: 400px) {
+	.About-Paty {
+	
+	grid-template-areas: "head"
+											 "item-a"
+												 "item-b";
+	}
+}
