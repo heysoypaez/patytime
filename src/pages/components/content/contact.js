@@ -19,7 +19,7 @@ function Contact(props) {
  	   
  	   <section className="Contact">
 
-     	<h2> Dime Hola Paty y hagamos algo chevere </h2>
+     	<h2> Dime "Hola Paty" y hagamos algo chevere </h2>
      	<small>(Mijo Son menos de 5 minutos)</small>
 
 			<a href={`https://api.whatsapp.com/send?phone=${props.phone}&text=Hola%20Paty`} target="_blank" rel="noopener noreferrer">
