@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import Page from "./components/page.js";
 
 import Header  from "./components/header/header-container.js"
 import Footer  from "./components/footer/footer.js"
@@ -14,19 +13,17 @@ class PageContainer extends Component {
 
 	render() {
 
-
 		return(
 
-			<Page>
+			<div className="Page">
 
-				 <Header />
-					
-				
+				<Header />
+									
 				{this.props.children}
 
 				<Footer />
 
-			</Page>
+			</div>
 		)
 	}
 }
