@@ -9,7 +9,7 @@ import AboutMePage from "./pages/components/about-me-page.js"
 import ServicesPage from "./pages/components/services-page.js"
 
 //React Router
-import { BrowserRouter as Router , Route, Switch} from "react-router-dom";
+import { BrowserRouter, Route, Switch} from "react-router-dom";
 
 
 
