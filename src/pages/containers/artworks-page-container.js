@@ -16,7 +16,7 @@ class ArtworksPageContainer extends Component {
 		}
 	}
 
-	handleCategoriesClick = (event)=> {
+	handleCategoriesClick = (event) => {
 
 		const { category } = event.target.dataset
 

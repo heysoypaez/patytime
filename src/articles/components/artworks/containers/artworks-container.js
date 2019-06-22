@@ -12,27 +12,22 @@ class ArtworksContainer extends Component {
 		this.state = {
 		data: data,
 		$artworks: [] ,
-		$artworksLast: [],
+		$artworksBase: [],
 		limit: this.props.limit,
 		category: this.props.category
 		}
 	}
 
-	filterArtworks = () => {
+	listArtworks = () => {
 
-		/*Variables 
-		Declaration && Assignement
-		------------------------*/
-
-		const {$artworks } = this.state;
-		const { limit, category } = this.state;
+		const {$artworks} = this.state
 		this.artworks = this.state.data.artworks.categories;
-		
+
 		for( let category in this.artworks) {
 
 
 				// "$" means that it is an element to render
-				this.state.$artworks.push(
+				$artworks.push(
 
 					this.artworks[category].map(
 				
@@ -49,50 +44,69 @@ class ArtworksContainer extends Component {
 				)
 		}
 
+		this.setState({
+			$artworksBase: $artworks
+		})
+
+	}
+
+	filterArtworks = () => {
+
+		/*Variables 
+		Declaration && Assignement
+		------------------------*/
+
+		const {
+
+			$artworks,
+			limit, 
+			category
+
+		} = this.state;
+	
+		
+
+
 		if(category) {
 			
-			const setCategory = async() => {
-
-				await this.setState({
-					$artworksLast: this.state.$artworks,
-					$artworks: []
-				})
-			
-				for(let i= 0; i < category.length; i++) {
+				( () => {
+				
+								 this.setState({
+									//I clean artworks for easily set new artworks in, using the state artworksLast
+									$artworks: []
+								})
+							
+								for(let i= 0; i < category.length; i++) {
+										
+									if(category[i] === "drawings") {
 						
-					if(category[i] === "drawings") {
-		
-						const drawings = this.state.$artworksLast[0] ;
-
-						this.setState({
-							$artworks: [ ...this.state.$artworks , drawings ]
-						})
-					}
-
-					if(category[i] === "dresses") {
-					
-						const dresses = this.state.$artworksLast[1] ;
+										const drawings = this.state.$artworksBase[0] ;
+				
+										this.setState({
+											$artworks: [ ...this.state.$artworks , drawings ]
+										})
+									}
+				
+									if(category[i] === "dresses") {
 									
-						this.setState({
-							$artworks: [...this.state.$artworks , dresses]
-						})
-					}
+										const dresses = this.state.$artworksBase[1] ;
+													
+										this.setState({
+											$artworks: [...this.state.$artworks , dresses]
+										})
+									}
+				
+									return this.state.$artworks;	
+								}
+							}
+				)()
 
-					return this.state.$artworks;
-
-				}
-			}
-
-			setCategory();	
 		}
 
 		if(limit) {
 
-			console.log(limit)
-
-
-			const $artworksLimitted = ( ) => {
-
+				console.log(limit)
+	   		 const $artworksLimitted = ( ) => {
 				let newArtlist = [];
 
 				const filterArtworks = (item, index) => {
@@ -153,14 +167,16 @@ class ArtworksContainer extends Component {
 	}
 
 	componentWillMount = () => {
-		this.filterArtworks()
+		this.listArtworks()
 	}
 
 	componentDidUpdate = (prevProps, prevState)  => {
 
 		if(prevProps !== this.props){
 
-				const updateArtworks = async() => {
+			//updateArtworks 
+
+			( async() => {
 
 					await	this.setState({
 							category: this.props.category
@@ -169,9 +185,8 @@ class ArtworksContainer extends Component {
 					this.filterArtworks()
 
 					console.log("El componente se actualizo")
-				}
+				})();
 
-				updateArtworks()
 		}
 	}
 

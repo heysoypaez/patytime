@@ -301,36 +301,60 @@ Lo que haré ahora será revisar para quitar números fijos y proceder a corregi
 =======
 
 
-			/*
-			¿Que quiero lograr?
-			Quiero filtrar las listas que estan dentro de la lista artworks a traves del estado de react
 
-			Para ello necesito acceder a las listas dentro del state artworks
-			-
-			Quiero que en total la cantidad mostrada sea la filtrada por el prop
+¿Que quiero lograr?
+Quiero filtrar las listas que estan dentro de la lista artworks a traves del estado de react
 
-			Pero tengo la siguiente situacion
+Para ello necesito acceder a las listas dentro del state artworks
+-
+Quiero que en total la cantidad mostrada sea la filtrada por el prop
 
-			Mi state $artworks es una lista que a su vez contiene dos sublistas
+Pero tengo la siguiente situacion
 
-			existara una manera de ver la longitud total de artworks sumando la longitud de sus sublistas y filtrar esa longitud total?
-			
-			Me interesa mantenerlo como listas independientes
+Mi state $artworks es una lista que a su vez contiene dos sublistas
 
-			Hagamos el algoritmo
+existara una manera de ver la longitud total de artworks sumando la longitud de sus sublistas y filtrar esa longitud total?
 
-			Si el limite es 4 entonces recorre el array artes
+Me interesa mantenerlo como listas independientes
 
-			Y dentro del array artes recorreras cada lista que tiene por dentro
+Hagamos el algoritmo
 
-			En base a esa lista crearemos una nueva lista que sea menor a 4 elementos (el limite) entre la cantidad de listas de artes redondeado a entero
+Si el limite es 4 entonces recorre el array artes
 
-			Y asi pasaremos a la siguiente lista donde igualmente crearemos una nueva lista que sea menor a 4 elementos (el limite) entre la cantidad de listas de artes redondeado a entero
+Y dentro del array artes recorreras cada lista que tiene por dentro
 
-			Finalmente al terminar de pasar lista por lista si la cantidad de elementos totales en ambas listas es igual al limite entonces hemos terminado
+En base a esa lista crearemos una nueva lista que sea menor a 4 elementos (el limite) entre la cantidad de listas de artes redondeado a entero
 
-			Y declararemos eso como el nuevo estado
+Y asi pasaremos a la siguiente lista donde igualmente crearemos una nueva lista que sea menor a 4 elementos (el limite) entre la cantidad de listas de artes redondeado a entero
 
-*/
+Finalmente al terminar de pasar lista por lista si la cantidad de elementos totales en ambas listas es igual al limite entonces hemos terminado
+
+Y declararemos eso como el nuevo estado
+
+
+Friday 22/06/19
+===================
+
+
+So, now i wanna resolve some specific problems:
+
+#Problem #1
+
+- First i want that when i click a category in de Artworks Page at the second time (and in the third eventually) at the first click you select the list with the other category
+
+- What is happening right now?
+
+When you make click nothing happens, unless you make click on the other category
+
+- Why is happening that ?
+
+- What will i do about that?
+1. Read and deeply understand my actual code
+
+- Ideas for solution
+
+I think this related for the way i design the changing of state
+
+
 
 
